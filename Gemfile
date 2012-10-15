@@ -18,6 +18,3 @@ platforms :mri_19 do
   gem 'pg'
 end
 
-gem 'test-unit'
-
-

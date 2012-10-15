@@ -1,4 +1,3 @@
-require 'rubygems'
 require 'rake'
 
 $LOAD_PATH.unshift('lib')
@@ -27,11 +26,13 @@ begin
       "Jacob Coby <jcoby@portallabs.com>",
       "Neszt Tibor <neszt@tvnetwork.hu>",
       "Miroslav Kratochvil <exa.exa@gmail.com>",
-      "Paul Gallagher <gallagher.paul@gmail.com>"
+      "Paul Gallagher <gallagher.paul@gmail.com>",
+      "Alex Jokela <ajokela@umn.edu>",
+      "Peter Clark <pclark@umn.edu>"
       ]
     gem.add_dependency "mysql", "= 2.8.1"
     gem.add_dependency "pg", "= 0.9.0"
-    gem.add_development_dependency "test-unit", ">= 2.1.1"
+
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
   Jeweler::GemcutterTasks.new

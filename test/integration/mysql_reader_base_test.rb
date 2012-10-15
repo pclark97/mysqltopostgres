@@ -2,7 +2,7 @@ require 'test_helper'
 
 require 'mysql2psql/mysql_reader'
 
-class MysqlReaderBaseTest < Test::Unit::TestCase
+class MysqlReaderBaseTest < MiniTest::Unit::TestCase
 
   class << self
     def startup

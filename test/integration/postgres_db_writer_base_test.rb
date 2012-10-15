@@ -2,7 +2,7 @@ require 'test_helper'
 
 require 'mysql2psql/postgres_db_writer'
 
-class PostgresDbWriterBaseTest < Test::Unit::TestCase
+class PostgresDbWriterBaseTest < MiniTest::Unit::TestCase
 
   class << self
     def startup

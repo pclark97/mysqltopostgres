@@ -2,7 +2,7 @@ require 'test_helper'
 
 require 'mysqltopostgres'
 
-class ConvertToFileTest < Test::Unit::TestCase
+class ConvertToFileTest < MiniTest::Unit::TestCase
 
   class << self
     def startup

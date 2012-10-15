@@ -1,13 +1,16 @@
-require 'rubygems'
-begin
-  gem 'test-unit'
-  require "test/unit"
-rescue LoadError
-  # assume using stdlib Test:Unit
-  require 'test/unit'
-end
+# Assume we're running in ruby 1.9, and we have minitest present.
+#require 'rubygems'
+#begin
+#  gem 'test-unit'
+#  require "test/unit"
+#rescue LoadError
+#  # assume using stdlib Test:Unit
+#  require 'test/unit'
+#end
+#
+#require 'ext_test_unit'
 
-require 'ext_test_unit'
+require 'minitest/autorun'
 
 def seed_test_database
   options=get_test_config_by_label(:localmysql_to_file_convert_nothing)

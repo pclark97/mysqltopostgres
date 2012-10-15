@@ -2,7 +2,7 @@ require 'test_helper'
 
 require 'mysql2psql/converter'
 
-class ConverterTest < Test::Unit::TestCase
+class ConverterTest < MiniTest::Unit::TestCase
 
   class << self
     def startup

@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class MysqlReaderTest < Test::Unit::TestCase
+class MysqlReaderTest < MiniTest::Unit::TestCase
 
   class << self
     def startup

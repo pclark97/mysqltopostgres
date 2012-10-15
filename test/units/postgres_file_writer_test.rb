@@ -2,7 +2,7 @@ require 'test_helper'
 
 require 'mysqltopostgres'
 
-class PostgresFileWriterTest < Test::Unit::TestCase
+class PostgresFileWriterTest < MiniTest::Unit::TestCase
   attr_accessor :destfile
   def setup
     begin
@@ -21,7 +21,7 @@ class PostgresFileWriterTest < Test::Unit::TestCase
     writer = Mysql2psql::PostgresFileWriter.new(destfile)
     writer.close
     content = IO.read(destfile)
-    assert_not_nil content.match("SET client_encoding = 'UTF8'")
+    assert_equal false, content.match("SET client_encoding = 'UTF8'").nil?
     assert_nil content.match("unobtanium")
   end
   

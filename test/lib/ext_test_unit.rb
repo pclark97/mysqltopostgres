@@ -1,4 +1,4 @@
-module Test::Unit
+module MiniTest::Unit
  
   class TestCase
    
@@ -19,12 +19,16 @@ module Test::Unit
 end
 
 
-module Test::Unit::Assertions
+module MiniTest::Unit::Assertions
   def assert_false(object, message="")
     assert_equal(false, object, message)
   end
   def assert_true(object, message="")
     assert_equal(true, object, message)
   end
+  def assert_not_nil(object, message="")
+    assert_equal(false, object.nil?, message)
+  end
+
 end
 
